@@ -37,7 +37,30 @@ button{
   cursor:pointer;
   transition:background 0.2s ease;
 }
+.menu-bar {
+  display: flex;
+  gap: 20px;
+  background: #f7f7f7;
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
+.menu-bar a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.menu-bar a:hover {
+  background: #e0e0e0;
+  transform: translateY(-1px);
+}
 button:hover{
   background:#555;
 }
