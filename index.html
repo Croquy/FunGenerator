@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Générateurs Absurdes du Bureau</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎲 Générateurs Absurdes du Bureau</h1>
+
+<div class="button-group" id="menu">
+<button onclick="setGenerator('estimate')">📊 Chiffrage flou</button>
+<button onclick="setGenerator('timesheet')">🧾 Rappel saisie temps</button>
+<button onclick="setGenerator('excuse')">🙃 Excuse projet</button>
+<button onclick="setGenerator('bug')">🐞 Bug report honnête</button>
+<button onclick="setGenerator('meeting')">📅 Réunion absurde</button>
+</div>
+
+<div class="action-bar">
+<button onclick="generate()">Générer</button>
+<button onclick="copyResult()">Copier</button>
+</div>
+
+<div id="result"></div>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
