@@ -46,21 +46,28 @@ button{
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* tooltip simple */
 .menu-bar a {
-  text-decoration: none;
-  color: #333;
-  padding: 8px 12px;
-  border-radius: 8px;
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  position: relative;
 }
 
-.menu-bar a:hover {
-  background: #e0e0e0;
-  transform: translateY(-1px);
+.menu-bar a:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 12px;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 10;
 }
+
 button:hover{
   background:#555;
 }
