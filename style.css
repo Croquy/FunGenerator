@@ -1,43 +1,27 @@
+/* === BASE === */
 body {
   font-family: 'Architects Daughter','Helvetica Neue',Helvetica,Arial,serif;
-  margin:0;
-  padding:20px;
-  background:#f4f4f4;
+  margin: 0;
+  padding: 20px;
+  background: #f4f4f4;
 }
 
-h1{
-  text-align:center;
-  margin-bottom:30px;
-  color:#333;
+h1, h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.container{
-  max-width:900px;
-  margin:auto;
-  background:white;
-  padding:25px;
-  border-radius:12px;
-  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.button-group{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-  gap:10px;
-  margin-bottom:20px;
-}
-
-button{
-  padding:14px;
-  font-size:16px;
-  border-radius:8px;
-  border:none;
-  background:#333;
-  color:white;
-  cursor:pointer;
-  transition:background 0.2s ease;
-}
-/* barre menu */
+/* === MENU BAR === */
 .menu-bar {
   display: flex;
   gap: 12px;
@@ -47,7 +31,6 @@ button{
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* liens */
 .menu-bar a {
   position: relative;
   text-decoration: none;
@@ -60,7 +43,6 @@ button{
   transition: all 0.2s ease;
 }
 
-/* tooltip au survol */
 .menu-bar a::after {
   content: attr(data-tooltip);
   position: absolute;
@@ -82,92 +64,59 @@ button{
   opacity: 1;
 }
 
-/* hover style du lien */
 .menu-bar a:hover {
   background: #e0e0e0;
   transform: translateY(-1px);
 }
 
-button:hover{
-  background:#555;
+/* === BUTTONS / ACTION BAR === */
+.action-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px;
 }
 
-.action-bar{
-  display:flex;
-  gap:10px;
-  justify-content:center;
-  margin:20px;
+button {
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
 }
 
-#result{
-  font-family: Helvetica,Arial,serif;
-  min-height:120px;
-  padding:20px;
-  border-radius:10px;
-  background:#fafafa;
-  border:1px solid #ddd;
-  font-size:16px;
+button:hover {
+  background: #555;
 }
 
-.low{background:#e6f7e6;color:#0a7a0a;font-weight:bold}
-.medium{background:#fff4e6;color:#b36b00;font-weight:bold}
-.high{background:#ffe6e6;color:#b30000;font-weight:bold}
-.critical{background:#3b0000;color:white;font-weight:bold}
+/* === RESULT / OUTPUT === */
+#result {
+  font-family: Helvetica, Arial, serif;
+  min-height: 120px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
 
+/* === POLITENESS BONUS / CITATION STYLE === */
+.politeness {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #555;
+  border-left: 3px solid #ccc;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+/* === RESPONSIVE === */
 @media(max-width:600px){
-
-body{
-padding:10px;
-}
-
-.container{
-padding:18px;
-}
-
-button{
-font-size:15px;
-padding:12px;
-}
-
-#result{
-font-size:15px;
-}
-
-}
-
-@keyframes royalAppear{
-0%{opacity:0;transform:scale(0.9);filter:blur(4px)}
-60%{transform:scale(1.03)}
-100%{opacity:1;transform:scale(1);filter:blur(0)}
-}
-
-@keyframes royalShake{
-0%,100%{transform:translateX(0)}
-25%{transform:translateX(-6px)}
-50%{transform:translateX(6px)}
-75%{transform:translateX(-4px)}
-}
-
-@keyframes darkPulse{
-0%{box-shadow:0 0 10px rgba(139,0,0,0.5)}
-50%{box-shadow:0 0 35px rgba(139,0,0,0.9)}
-100%{box-shadow:0 0 10px rgba(139,0,0,0.5)}
-}
-
-.intolerable{
-background:linear-gradient(135deg,#3b0000,#1a0000);
-color:#ffeaea;
-animation:royalAppear 0.5s ease-out forwards, royalShake 0.4s ease-in-out 0.5s, darkPulse 2s infinite 1s;
-}
-
-@keyframes decreeReveal{
-from{width:0}
-to{width:100%}
-}
-
-.decree-text{
-overflow:hidden;
-white-space:nowrap;
-border-right:2px solid #ffeaea;
-animation:decreeReveal 1.5s steps(40,end) forwards;
+  body { padding: 10px; }
+  .container { padding: 18px; }
+  button { font-size: 15px; padding: 12px; }
+  #result { font-size: 15px; }
 }
