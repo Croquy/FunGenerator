@@ -20,11 +20,11 @@ function generateEstimate(){
       "Alignement stratégique d’un besoin exprimé oralement sans documentation associée."
   ];
     const complexities = [
-      "Complexité estimée : Moyenne mais sensible aux variables invisibles.",
-      "Complexité estimée : Faible en apparence, structurellement instable.",
-      "Complexité estimée : Modérée avec dépendances implicites.",
-      "Complexité estimée : Élevée selon ce que vous n’avez pas précisé.",
-      "Complexité estimée : Variable selon la réalité terrain."
+      "Moyenne mais sensible aux variables invisibles.",
+      "Faible en apparence, structurellement instable.",
+      "Modérée avec dépendances implicites.",
+      "Élevée selon ce que vous n’avez pas précisé.",
+      "Variable selon la réalité terrain."
     ];
   const risques = [
     "Sous réserve d'une meilleure définition du besoin.",
@@ -57,7 +57,7 @@ function generateEstimate(){
       const maxBudget = maxDays * TJM;
 
 const phrase = `
-<h1>Description :</h1>
+<h2>Description :</h2>
 <p>${r(actions)}</p>
 
 <h2>Complexité :</h2>
