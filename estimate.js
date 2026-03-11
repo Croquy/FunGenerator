@@ -47,22 +47,14 @@ function generateEstimate(){
     function randomInt(min, max) {
       return Math.floor(Math.random() * (max - min + 1)) + min;
     }
+  function r(arr){
+    return arr[Math.floor(Math.random()*arr.length)];
 
-    function randomItem(array) {
-      return array[Math.floor(Math.random() * array.length)];
-    }
-
-    function generateEstimate() {
       const minDays = randomInt(5, 40);
       const maxDays = randomInt(minDays + 1, 75);
 
       const minBudget = minDays * TJM;
       const maxBudget = maxDays * TJM;
-
-
-  function r(arr){
-    return arr[Math.floor(Math.random()*arr.length)];
-  }
 
   const phrase =`
     Description :
