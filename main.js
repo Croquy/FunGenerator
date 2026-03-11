@@ -30,7 +30,7 @@ function generate(){
     text = generateMeeting();
   }
 
-  document.getElementById("result").innerText = text;
+  document.getElementById("result").innerHTML  = text;
 }
 
 function copyResult(){
