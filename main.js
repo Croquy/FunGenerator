@@ -1,7 +1,5 @@
 let currentGenerator = "estimate";
 
-let currentGenerator = '';
-
 function setGenerator(name, longname){ 
   currentGenerator = name;
   document.getElementById('current-generator').textContent = longname;
