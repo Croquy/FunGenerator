@@ -16,20 +16,22 @@
 <h1>🎲 Générateurs Absurdes du Bureau</h1>
 
 <nav class="menu-bar">
-  <a href="#" onclick="setGenerator('estimate')">📊 Chiffrage flou</a>
-  <a href="#" onclick="setGenerator('timesheet')">🧾 Rappel saisie temps</a>
-  <a href="#" onclick="setGenerator('excuse')">🙃 Excuse projet</a>
-  <a href="#" onclick="setGenerator('bug')">🐞 Bug report honnête</a>
-  <a href="#" onclick="setGenerator('meeting')">📅 Réunion absurde</a>
+  <a href="#" onclick="setGenerator('estimate', 'Chiffrage flou complet')"><span class="icon">📊</span>Chiffrage</a>
+  <a href="#" onclick="setGenerator('timesheet', 'Rappel saisie temps complet')"><span class="icon">🧾</span>Jira</a>
+  <a href="#" onclick="setGenerator('excuse', 'Excuse projet détaillée')"><span class="icon">🙃</span>Excuse</a>
+  <a href="#" onclick="setGenerator('bug', 'Bug report honnête')"><span class="icon">🐞</span>Bug</a>
+  <a href="#" onclick="setGenerator('meeting', 'Réunion absurde complète')"><span class="icon">📅</span>Réunion</a>
 </nav>
 
-<div class="action-bar">
-  <button onclick="generate()" title="Générer"><i class="fas fa-sync-alt"></i></button>
-  <button onclick="copyResult()" title="Copier"><i class="fas fa-copy"></i></button>
-</div>
+<h2 id="current-generator">Sélectionnez une option</h2>
 
 <div id="result"></div>
 
+</div>
+  
+<div class="action-bar">
+  <button onclick="generate()" title="Générer"><i class="fas fa-sync-alt"></i></button>
+  <button onclick="copyResult()" title="Copier"><i class="fas fa-copy"></i></button>
 </div>
 
 <script src="main.js"></script>
