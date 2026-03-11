@@ -15,13 +15,13 @@
 
 <h1>🎲 Générateurs Absurdes du Bureau</h1>
 
-<div class="button-group" id="menu">
-<button onclick="setGenerator('estimate')">📊 Chiffrage flou</button>
-<button onclick="setGenerator('timesheet')">🧾 Rappel saisie temps</button>
-<button onclick="setGenerator('excuse')">🙃 Excuse projet</button>
-<button onclick="setGenerator('bug')">🐞 Bug report honnête</button>
-<button onclick="setGenerator('meeting')">📅 Réunion absurde</button>
-</div>
+<nav class="menu-bar">
+  <a href="#" onclick="setGenerator('estimate')">📊 Chiffrage flou</a>
+  <a href="#" onclick="setGenerator('timesheet')">🧾 Rappel saisie temps</a>
+  <a href="#" onclick="setGenerator('excuse')">🙃 Excuse projet</a>
+  <a href="#" onclick="setGenerator('bug')">🐞 Bug report honnête</a>
+  <a href="#" onclick="setGenerator('meeting')">📅 Réunion absurde</a>
+</nav>
 
 <div class="action-bar">
   <button onclick="generate()" title="Générer"><i class="fas fa-sync-alt"></i></button>
