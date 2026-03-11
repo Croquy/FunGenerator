@@ -49,7 +49,7 @@ function generateEstimate(){
     }
   function r(arr){
     return arr[Math.floor(Math.random()*arr.length)];
-
+  }
       const minDays = randomInt(5, 40);
       const maxDays = randomInt(minDays + 1, 75);
 
