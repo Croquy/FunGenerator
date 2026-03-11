@@ -56,17 +56,23 @@ function generateEstimate(){
       const minBudget = minDays * TJM;
       const maxBudget = maxDays * TJM;
 
-  const phrase =`
-    Description :
-${r(actions)}
+const phrase = `
+<h1>Description :</h1>
+<p>${r(actions)}</p>
 
-${r(complexities)}
-Estimation : entre ${minDays} et ${maxDays} jours ouvrés.
-Budget prévisionnel : entre ${minBudget.toLocaleString()} € et ${maxBudget.toLocaleString()} €.
+<h2>Complexité :</h2>
+<p>${r(complexities)}</p>
 
-${r(risques)}
+<h2>Estimation :</h2>
+<p>entre ${minDays} et ${maxDays} jours ouvrés</p>
 
-${r(politenessBonus)} 
-`
+<h2>Budget prévisionnel :</h2>
+<p>entre ${minBudget.toLocaleString()} € et ${maxBudget.toLocaleString()} €</p>
+
+<h2>Risques :</h2>
+<p>${r(risques)}</p>
+
+<p>${r(politenessBonus)}</p>
+`;
   return phrase;
 }
