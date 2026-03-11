@@ -29,8 +29,12 @@ function generate(){
   if(currentGenerator === "meeting"){
     text = generateMeeting();
   }
-
-  document.getElementById("result").innerHTML  = text;
+  const result = document.getElementById('result');
+  // Animate.css effect
+  result.classList.remove('animate__animated','animate__fadeIn');
+  void result.offsetWidth; // reset
+  result.classList.add('animate__animated','animate__fadeIn');
+  result.innerHTML  = text;
 }
 
 function copyResult(){
