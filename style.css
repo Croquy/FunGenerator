@@ -50,6 +50,7 @@ button:hover{
 }
 
 #result{
+  font-family: Helvetica,Arial,serif;
   min-height:120px;
   padding:20px;
   border-radius:10px;
