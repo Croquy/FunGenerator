@@ -2,7 +2,8 @@ let currentGenerator = "estimate";
 
 function setGenerator(name){
   currentGenerator = name;
-  document.getElementById("result").innerText = "";
+  generate();
+  
 }
 
 function generate(){
