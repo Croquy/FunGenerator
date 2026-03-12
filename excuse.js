@@ -38,8 +38,8 @@ function generateExcuse() {
     return arr[Math.floor(Math.random() * arr.length)];
   }
 return `
-  <h2>${pick(emojis)} ${pick(intros)} :</h2>
-  <p>${pick(sujets)} ${pick(actions)}. ${pick(anecdotes)}</p>
+  <h2>${pick(emojis)} ${pick(types)} :</h2>
+  <p>${pick(situations)}, ${pick(détails)}.</p>
   <p>${pick(consequences)}</p>
 `;
 }
