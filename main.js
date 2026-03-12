@@ -5,7 +5,12 @@ function setGenerator(name, longname){
   document.getElementById('current-generator').textContent = longname;
   generate();
 }
-
+  function randomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+  function r(arr){
+    return arr[Math.floor(Math.random()*arr.length)];
+  }
 function generate(){
 
   let text = "";
