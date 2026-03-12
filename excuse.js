@@ -34,12 +34,10 @@ function generateExcuse() {
 
   const emojis = ["☕","🐱","💻","🪐","⚡","📝","😅","⌛"];
 
-  function pick(arr) {
-    return arr[Math.floor(Math.random() * arr.length)];
-  }
+
 return `
-  <h2>${pick(emojis)} ${pick(types)} :</h2>
-  <p>${pick(situations)}, ${pick(details)}.</p>
-  <p>${pick(consequences)}</p>
+  <h2>${r(emojis)} ${r(types)} :</h2>
+  <p>${r(situations)}, ${r(details)}.</p>
+  <p>${r(consequences)}</p>
 `;
 }
