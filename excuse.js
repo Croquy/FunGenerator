@@ -16,7 +16,7 @@ function generateExcuse() {
     "Mon ordinateur a fait grève"
   ];
 
-  const détails = [
+  const details = [
     "et je n’ai rien pu faire", 
     "et je me suis retrouvé à négocier avec lui", 
     "et tout mon planning a été recalibré", 
@@ -24,7 +24,7 @@ function generateExcuse() {
     "ce qui a provoqué un chaos mineur sur mon écran"
   ];
 
-  const conséquences = [
+  const consequences = [
     "Tout le monde attend patiemment.", 
     "Le serveur pleure en silence.", 
     "Jira se sent seul et abandonné.", 
@@ -39,7 +39,7 @@ function generateExcuse() {
   }
 return `
   <h2>${pick(emojis)} ${pick(types)} :</h2>
-  <p>${pick(situations)}, ${pick(détails)}.</p>
+  <p>${pick(situations)}, ${pick(details)}.</p>
   <p>${pick(consequences)}</p>
 `;
 }
