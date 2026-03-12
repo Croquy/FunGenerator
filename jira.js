@@ -52,5 +52,5 @@ function generateTimesheet(){
   }
 
   // on combine intro + sujet + action + anecdote + conséquence
-  return `${pick(emojis)} ${pick(intros)} : ${pick(sujets)} ${pick(actions)}. ${pick(anecdotes)} ${pick(consequences)}`;
+  return `<h2>${pick(emojis)} ${pick(intros)} :</h2> <p>${pick(sujets)} ${pick(actions)}</p>. <p>${pick(anecdotes)} ${pick(consequences)}</p>`;
 }
