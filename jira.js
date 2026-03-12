@@ -8,24 +8,25 @@ function generateTimesheet(){
     "Ping discret mais insistant",
     "Message du bot comptable"
   ];
+  
+const sujets = [
+  "Tes saisies Jira",
+  "Tes timesheets",
+  "Tes heures du jour",
+  "Tes précieuses lignes Jira",
+  "Tes temps passés",
+  "Tes entrées horodatées"
+];
 
-  const sujets = [
-    "la saisie de temps Jira",
-    "ton timesheet",
-    "les heures du jour",
-    "les précieuses lignes Jira",
-    "les temps passés"
-  ];
-
-  const actions = [
-    "attend patiemment",
-    "se sent abandonnée",
-    "commence à paniquer",
-    "observe le vide",
-    "n’existe toujours pas",
-    "pleure un peu dans son coin",
-    "s'impatiente comme un café froid"
-  ];
+const actions = [
+  "attendent patiemment ton retour",
+  "se sentent abandies dans le néant",
+  "commencent à paniquer comme des chats sous la pluie",
+  "observant le vide intersidéral",
+  "n’existent toujours pas mais ça fait peur",
+  "pleurent un peu dans leur coin",
+  "s'impatientent comme des cafés froids oubliés"
+];
 
   const consequences = [
     "Les managers deviennent nerveux.",
@@ -52,5 +53,5 @@ function generateTimesheet(){
   }
 
   // on combine intro + sujet + action + anecdote + conséquence
-  return `<h2>${pick(emojis)} ${pick(intros)} :</h2> <p>${pick(sujets)} ${pick(actions)}</p>. <p>${pick(anecdotes)} ${pick(consequences)}</p>`;
+  return `<h2>${pick(emojis)} ${pick(intros)} :</h2> <p>${pick(sujets)} ${pick(actions)}.${pick(anecdotes)} </p> <p>${pick(consequences)}</p>`;
 }
