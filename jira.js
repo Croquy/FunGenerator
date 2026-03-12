@@ -48,9 +48,6 @@ const actions = [
 
   const emojis = ["⏳","📊","🧾","⚠️","🕒","👀","☕","🌱","💻","🪐"];
 
-  function pick(arr){
-    return arr[Math.floor(Math.random()*arr.length)];
-  }
 
   // on combine intro + sujet + action + anecdote + conséquence
   return `<h2>${r(emojis)} ${r(intros)} :</h2> <p>${r(sujets)} ${r(actions)}. ${r(anecdotes)} </p> <p>${r(consequences)}</p>`;
