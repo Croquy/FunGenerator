@@ -53,5 +53,5 @@ const actions = [
   }
 
   // on combine intro + sujet + action + anecdote + conséquence
-  return `<h2>${pick(emojis)} ${pick(intros)} :</h2> <p>${pick(sujets)} ${pick(actions)}. ${pick(anecdotes)} </p> <p>${pick(consequences)}</p>`;
+  return `<h2>${r(emojis)} ${r(intros)} :</h2> <p>${r(sujets)} ${r(actions)}. ${r(anecdotes)} </p> <p>${r(consequences)}</p>`;
 }
