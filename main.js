@@ -3,7 +3,23 @@ let currentGenerator = "estimate";
 function setGenerator(name, longname){ 
   currentGenerator = name;
   document.getElementById('current-generator').textContent = longname;
+  
+  // Retirer la classe active de tous les liens
+  const menuLinks = document.querySelectorAll('.menu-bar a');
+  menuLinks.forEach(link => link.classList.remove('active'));
+  
+  // Ajouter la classe active au lien cliqué
+  const activeLink = document.getElementById('menu-' + name);
+  if (activeLink) {
+    activeLink.classList.add('active');
+  }
+  
   generate();
+}
+
+function toggleMenu() {
+  const menuBar = document.querySelector('.menu-bar');
+  menuBar.classList.toggle('open');
 }
   function randomInt(min, max) {
       return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -50,3 +66,6 @@ function copyResult(){
 
   navigator.clipboard.writeText(text);
 }
+
+// Initialisation au chargement de la page
+setGenerator('estimate', 'Chiffrage flou');

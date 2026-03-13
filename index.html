@@ -19,24 +19,25 @@
 <h1>🎲 Générateurs Absurdes du Bureau</h1>
 
 <nav class="menu-bar">
-  <a href="#" data-tooltip="Chiffrage flou" onclick="setGenerator('estimate', 'Chiffrage flou')">
+  <button class="menu-toggle" onclick="toggleMenu()" title="Menu"><i class="fas fa-bars"></i></button>
+  <a href="#" data-tooltip="Chiffrage flou" onclick="setGenerator('estimate', 'Chiffrage flou')" id="menu-estimate">
     <span class="icon">📊</span>Chiffrage
   </a>
-  <a href="#" data-tooltip="Rappel saisie temps" onclick="setGenerator('timesheet', 'Rappel saisie temps')">
+  <a href="#" data-tooltip="Rappel saisie temps" onclick="setGenerator('timesheet', 'Rappel saisie temps')" id="menu-timesheet">
     <span class="icon">🧾</span>Jira
   </a>
-  <a href="#" data-tooltip="Excuse projet détaillée" onclick="setGenerator('excuse', 'Excuse projet détaillée')">
+  <a href="#" data-tooltip="Excuse projet détaillée" onclick="setGenerator('excuse', 'Excuse projet détaillée')" id="menu-excuse">
     <span class="icon">🙃</span>Excuse
   </a>
-  <a href="#" data-tooltip="Bug report honnête" onclick="setGenerator('bug', 'Bug report honnête')">
+  <a href="#" data-tooltip="Bug report honnête" onclick="setGenerator('bug', 'Bug report honnête')" id="menu-bug">
     <span class="icon">🐞</span>Bug
   </a>
-  <a href="#" data-tooltip="Réunion absurde" onclick="setGenerator('meeting', 'Réunion absurde')">
+  <a href="#" data-tooltip="Réunion absurde" onclick="setGenerator('meeting', 'Réunion absurde')" id="menu-meeting">
     <span class="icon">📅</span>Réunion
   </a>
 </nav>
 
-<h2 id="current-generator">Sélectionnez une option</h2>
+<h1 id="current-generator">Sélectionnez une option</h1>
 
 
 <div id="result"></div>
@@ -53,5 +54,7 @@
 <script src="estimate.js"></script>
 <script src="jira.js"></script>
 <script src="excuse.js"></script>
+<script src="bug.js"></script>
+<script src="meeting.js"></script>
 </body>
 </html>
