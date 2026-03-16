@@ -26,6 +26,7 @@ function generateTimesheet() {
     "ont rejoint un syndicat et exigent d'être remplies",
     "contemplent le vide à ta place",
     "sont en train de rédiger une lettre de démission",
+    "sont vide et chaque minute non saisie augmente la gravité du chaos de 0.01%"
   ];
 
   const conclusions = [
