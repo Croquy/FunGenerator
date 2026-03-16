@@ -1,54 +1,49 @@
-function generateTimesheet(){
+function generateTimesheet() {
 
   const intros = [
-    "Petit rappel amical",
-    "Annonce officielle du département productivité",
-    "Notification intergalactique",
-    "Message du futur",
     "Ping discret mais insistant",
-    "Message du bot comptable"
+    "Annonce officielle du département productivité",
+    "Message du bot comptable",
+    "Rappel automatique non désactivable",
+    "Alerte niveau modéré mais quand même",
+    "Communication urgente du service administratif",
+    "Info importante de la part de Jira lui-même",
+    "Bulletin météo du reporting",
   ];
-  
-const sujets = [
-  "Tes saisies Jira",
-  "Tes timesheets",
-  "Tes heures du jour",
-  "Tes précieuses lignes Jira",
-  "Tes temps passés",
-  "Tes entrées horodatées"
-];
 
-const actions = [
-  "attendent patiemment ton retour",
-  "se sentent abandies dans le néant",
-  "commencent à paniquer comme des chats sous la pluie",
-  "observant le vide intersidéral",
-  "n’existent toujours pas mais ça fait peur",
-  "pleurent un peu dans leur coin",
-  "s'impatientent comme des cafés froids oubliés"
-];
+  const milieu = [
+    "font la grève depuis lundi",
+    "ont décidé de prendre des vacances sans prévenir",
+    "flottent dans le néant administratif",
+    "n'existent toujours pas officiellement",
+    "se promènent quelque part entre hier et jamais",
+    "ont été vues pour la dernière fois vendredi matin",
+    "prennent la poussière dans un coin de ton cerveau",
+    "se sentent profondément ignorées",
+    "ont entamé une réflexion personnelle sur leur existence",
+    "sont portées disparues depuis 48h",
+    "refusent de s'afficher tant que tu ne les as pas saisies",
+    "ont rejoint un syndicat et exigent d'être remplies",
+    "contemplent le vide à ta place",
+    "sont en train de rédiger une lettre de démission",
+  ];
 
-  const consequences = [
+  const conclusions = [
     "Les managers deviennent nerveux.",
-    "Un contrôleur de gestion pleure quelque part.",
-    "Les serveurs Jira ressentent un grand vide.",
-    "La comptabilité prépare déjà un regard désapprobateur.",
-    "L'univers administratif est déséquilibré.",
-    "Ton chat se demande pourquoi tu n’es pas devant l’écran.",
-    "Une dimension parallèle se met à tourner au ralenti."
+    "La direction prépare un regard désapprobateur.",
+    "Les stats de fin de mois vont être improvisées.",
+    "Quelqu'un va devoir inventer des chiffres.",
+    "Le reporting avance sans toi, et ça se verra.",
+    "Les dashboards affichent des trous béants.",
+    "Ton team lead commence à combler les blancs tout seul.",
+    "Le bilan mensuel va être créatif.",
+    "Les chiffres du projet racontent une histoire alternative.",
   ];
 
-  const anecdotes = [
-    "On raconte qu'un développeur a oublié son timesheet et Jira a pleuré des larmes de code.",
-    "Une fois, un timesheet oublié a provoqué la disparition mystérieuse de la dernière boîte de donuts du bureau.",
-    "Chaque minute non saisie augmente la gravité du chaos administratif de 0.01%.",
-    "Le café du matin se transforme en potion magique pour compléter tes heures.",
-    "Même les plantes vertes du bureau commencent à demander des updates."
-  ];
+  const emojis = ["⏳", "📊", "🧾", "⚠️", "🕒", "👀", "☕", "💻", "🪐", "📌"];
 
-  const emojis = ["⏳","📊","🧾","⚠️","🕒","👀","☕","🌱","💻","🪐"];
-
-
-  // on combine intro + sujet + action + anecdote + conséquence
-  return `<h2>${r(emojis)} ${r(intros)} :</h2> <p>${r(sujets)} ${r(actions)}. ${r(anecdotes)} </p> <p>${r(consequences)}</p>`;
+  return `
+    <h2>${r(emojis)} ${r(intros)} :</h2>
+    <p>Tes saisies de temps ${r(milieu)}. ${r(conclusions)}</p>
+  `;
 }

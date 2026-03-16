@@ -1,41 +1,43 @@
 function generateExcuse() {
   const acteurs = {
-    "🐱 mon chat": [
+    "mon chat": [
       "a décidé que mon clavier était son trône",
       "a supprimé un mail important en marchant sur Suppr",
       "dormait paisiblement sur mes genoux quand j'ai voulu me lever",
       "a fait tomber mon café sur le clavier",
     ],
-    "📶 le Wi‑Fi": [
+    "le Wi‑Fi": [
       "a pris une pause syndicale non annoncée",
       "a fait semblant de fonctionner jusqu'au moment crucial",
       "a décidé de changer son code d'accès pour me faire une blague",
       "a décidé de ne reconnaître que les appareils qu'il apprécie",
     ],
-    "⏰ mon réveil": [
+    "mon réveil": [
       "a interprété 7h30 de façon très créative",
       "a sonné uniquement dans mon rêve",
       "a négocié cinq minutes qui ont duré une heure",
       "avait une panne de batterie au moment de sonner",
       "n'avait plus de voix pour me réveiller",
     ],
-    "🖨️ l'imprimante": [
+    "l'imprimante": [
       "a attendu le moment le plus inconvenant pour manquer d'encre",
       "a refusé de reconnaître le document pourtant identique au précédent",
       "a choisi ce matin pour explorer une nouvelle vocation",
     ],
-    "🖥️ le serveur": [
+    "le serveur": [
       "a décidé de faire une sieste non planifiée",
       "a eu une crise existentielle au mauvais moment",
       "a choisi de redémarrer pendant la démo",
     ],
-    "🖥️ mon écran": [
+    "mon écran": [
       "n'a pas apprécié la mise à jour récente",
       "a voulu rester noir pour faire une pause visuelle",
       "a choisi de ne pas afficher les fichiers importants",
     ],
-    "⌨️ mon clavier": [
+    "mon clavier": [
       "a trié les touches de façon aléatoire pour me faire une surprise",
+      "était rempli de miette qui ont causé des faux contacts",
+      "a décidé de ne pas reconnaître les touches les plus utilisées",
     ],
   };
 
@@ -51,7 +53,7 @@ function generateExcuse() {
         "je suis arrivé à la fin de la journée",
         "je n'ai pas pu arriver avant la pause café",
         "j'ai raté les trois premiers points de la réunion",
-        "tout le monde était déjà en train de partir",
+        "tout le monde était déjà en train de partir quand je suis arrivé",
       ],
     },
     "Bug": {
@@ -59,13 +61,13 @@ function generateExcuse() {
         "Le bug vient du fait que",
         "J'ai identifié le problème :",
         "Après analyse approfondie,",
-        "Le ticket Jira ne le dira pas mais",
+        "Ce n'est pas que ca ne marche pas, c'est juste que"
       ],
       consequences: [
-        "mon ordi fait grève",
-        "ma souris s'est sauvée",
+        "la fonctionnalité n'est pas implémentée",
+        "ce n'est pas tout à fait comme c'était prévu",
         "le fichier existe dans une dimension parallèle",
-        "VSCode a pris ses propres décisions",
+        "ca rend un truc original meme si inutilisable",
       ],
     },
     "Absence": {
