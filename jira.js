@@ -12,39 +12,32 @@ function generateTimesheet() {
   ];
 
   const milieu = [
-    "font la grève depuis lundi",
-    "ont décidé de prendre des vacances sans prévenir",
-    "flottent dans le néant administratif",
-    "n'existent toujours pas officiellement",
-    "se promènent quelque part entre hier et jamais",
-    "ont été vues pour la dernière fois vendredi matin",
-    "prennent la poussière dans un coin de ton cerveau",
-    "se sentent profondément ignorées",
-    "ont entamé une réflexion personnelle sur leur existence",
-    "sont portées disparues depuis 48h",
-    "refusent de s'afficher tant que tu ne les as pas saisies",
+    "n'existent toujours pas",
+    "sont portées disparues",
+    "prennent la poussière",
+    "ont été vues pour la dernière fois la semaine dernière",
     "ont rejoint un syndicat et exigent d'être remplies",
-    "contemplent le vide à ta place",
-    "sont en train de rédiger une lettre de démission",
-    "sont vide et chaque minute non saisie augmente la gravité du chaos de 0.01%"
+    "ont dû rédiger une lettre de démission",
+    "ont entamé une réflexion personnelle sur leur existence",
+    "restent uniquement dans ton esprit",
   ];
 
   const conclusions = [
-    "Les managers deviennent nerveux.",
-    "La direction prépare un regard désapprobateur.",
-    "Les stats de fin de mois vont être improvisées.",
-    "Quelqu'un va devoir inventer des chiffres.",
-    "Le reporting avance sans toi, et ça se verra.",
-    "Les dashboards affichent des trous béants.",
-    "Ton team lead commence à combler les blancs tout seul.",
-    "Le bilan mensuel va être créatif.",
-    "Les chiffres du projet racontent une histoire alternative.",
+    "du coup les stats de fin de mois vont être improvisées.",
+    "donc le reporting avance sans toi, et ça se verra.",
+    "alors les dashboards affichent des trous béants.",
+    "et le bilan mensuel va raconter une histoire alternative.",
+    "donc quelqu'un va devoir inventer des chiffres.",
+    "et ton team lead commence à combler les blancs tout seul.",
+    "donc la direction prépare un regard désapprobateur.",
+    "alors les managers deviennent nerveux.",
+    "et ça commence à se voir dans les stats.",
   ];
 
   const emojis = ["⏳", "📊", "🧾", "⚠️", "🕒", "👀", "☕", "💻", "🪐", "📌"];
 
   return `
     <h2>${r(emojis)} ${r(intros)} :</h2>
-    <p>Tes saisies de temps ${r(milieu)}. ${r(conclusions)}</p>
+    <p>Tes saisies de temps ${r(milieu)}, ${r(conclusions)}</p>
   `;
 }

@@ -124,7 +124,7 @@ function generateMeeting() {
         "Les absences le lundi sont-elles une coïncidence ?",
         "Proposition : interdire les congés le lundi pour préserver le point hebdomadaire",
         "Repousser les arrêts maladie du lundi pour préserver le point hebdomadaire ?",
-        "Règle de télétravail : maximum un jour, non mitoyen à un jour non travaillé, et jamais le mercredi",
+        "Règle de télétravail : maximum un jour, non mitoyen à un jour non travaillé ni au mercredi",
         "Interdiction formelle d'être en congé en même temps que son voisin de bureau",
         "Le bureau se sent seul : seuil minimum de présence physique à définir",
         "Télétravail le vendredi : quel est le meilleur programme TV ?",
